@@ -1,0 +1,30 @@
+{
+  "name": "pec1",
+  "version": "1.0.0",
+  "description": "Pequeña enciclopedia web sobre varios conceptos relacionados con el desarrollo front end.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmgdragon/html-css-pec1.git"
+  },
+  "author": "cmgdragon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmgdragon/html-css-pec1/issues"
+  },
+  "homepage": "https://github.com/cmgdragon/html-css-pec1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "parcel-plugin-clean-dist": "0.0.6"
+  }
+}
