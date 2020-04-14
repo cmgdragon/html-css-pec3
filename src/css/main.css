@@ -1,19 +1,11 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
-    --color_principal: #009edb;
+    --color_principal: rgba(14, 4, 105, .8);
     --color_resalte: rgba(14, 4, 105, .6);
 }
 
-body.bloquear {
-    overflow-y: hidden;
-}
-
-body.bloquear::before {
+span#bloquear.bloquear::before {
     content: '';
-    margin: 0;
-    padding: 0;
-    left: 0;
-    right: 0;
     top: 0;
     bottom: 0;
     position: absolute;
@@ -42,19 +34,28 @@ a:hover, a:active, a:focus {
 footer {
     width: 100%;
     margin-top: 5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.123);
+    background-color: rgba(29, 29, 29, 0.788);
+    padding: 1rem;
 }
 
 
 footer > div {
     margin-top: 1rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
 footer > div > a {
     padding: .5rem;
+    color: white !important;
+}
+
+footer > div > a:hover,
+footer > div > a:active,
+footer > div > a:focus {
+    text-decoration: underline;
+    color: white !important;
 }
 
 #header > i {
@@ -106,6 +107,9 @@ footer > div > a {
     #menu-lateral > i {
         left: 90vw;
     }
+    footer > div {
+        flex-direction: column;
+    }
 
 }
 
@@ -132,59 +136,4 @@ footer > div > a {
     width: 100%;
     height: auto;
     padding: 1.5rem 0 1.5rem 0;
-}
-
-#wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-#wrapper > a {
-    transition: all .2s ease-in;
-    opacity: .8;
-}
-
-#wrapper > a:hover {
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    opacity: 1;
-}
-
-.categoria-lenguajes, .categoria-bundlers {
-    position: relative;
-    width: 100%;
-    height: 18rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.categoria-lenguajes {
-    background-size: cover;
-    background-image: url('../img/code.jpg');
-}
-
-.categoria-bundlers {
-    background-size: cover;
-    background-image: url('../img/bundler.jpg');
-    background-position: center;
-}
-
-.categoria-lenguajes::before,
-.categoria-bundlers::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(14, 4, 105, .6);
-}
-
-#wrapper > a > h2 {
-    background-color: white;
-    color: rgb(14, 4, 105);
-    padding: 1rem;
-    border-radius: 10px;
-    z-index: 1;
 }

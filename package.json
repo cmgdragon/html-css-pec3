@@ -25,6 +25,9 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "css": "^2.2.4",
+    "main": "^1000.0.1",
+    "main.css": "^2.0.0",
     "parcel-plugin-clean-dist": "0.0.6"
   }
 }

@@ -1,0 +1,59 @@
+@import './main.css';
+
+:root {
+    --tamano-imagen: 9rem;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section > h1 {
+    padding: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin: 3rem;
+    border: 2px black solid;
+    transition: all .3s ease-in-out;
+    min-width: var(--tamano-imagen);
+}
+
+.card:hover, .card:active {
+    cursor: pointer;
+    box-shadow: 0 0 7px 1px black;
+}
+
+a.card:hover,
+a.carda:active,
+a.card:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-card {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: var(--tamano-imagen);
+    max-width: var(--tamano-imagen);
+    max-height: var(--tamano-imagen);
+}
+
+.content-card {
+    margin-top: 1rem;
+}
+
+[name=js] {
+    background-image: url(../img/lenguajes/javascript.png);
+}
+
+[name=php] {
+    background-image: url(../img/lenguajes/php.png);
+}
