@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/categoria.css">
+    <link rel="stylesheet" href="./css/main.scss">
     <script src="https://kit.fontawesome.com/bbc3c21183.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-<span id="bloquear"></span>
 
-<div id="menu-lateral">
+<header>
+    <span id="bloquear"></span>
 
-    <i class="fas fa-times"></i>
+    <div id="menu-lateral">
 
-    <ul>
-        <li><a href="index.html">Categorías</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-    
-</div>
+        <i class="fas fa-times"></i>
 
-<div id="header">
-    <i class="fas fa-bars"></i>
-</div>
+        <ul>
+            <li><a href="index.html">Categorías</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        
+    </div>
+
+    <div id="header">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
 
 
-<section>
+<section id="categoria">
 
     <h1>Lenguajes</h1>
 
     <div id="content">
 
-        <a class="card">
+        <a href="javascript.html" class="card">
 
             <div class="image-card" name="js"></div>
             <div class="content-card">
@@ -44,9 +47,9 @@
 
         <a class="card">
 
-            <div class="image-card" name="php"></div>
+            <div href="#" class="image-card" name="html"></div>
             <div class="content-card">
-                <h2>PHP</h2>
+                <h2>HTML</h2>
             </div>
 
         </a>

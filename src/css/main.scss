@@ -1,0 +1,356 @@
+$marino-oscuro: rgba(14, 4, 105, .8);
+$marino-claro: rgba(14, 4, 105, .6);
+
+//páginas de categorías
+$tamano-imagen-categoria: 9rem;
+
+/*  BASE CSS  */
+
+@import './_variables.scss';
+
+/*  BASE CSS  */
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span#bloquear.bloquear::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active, a:focus {
+	color: $marino-claro;
+
+}
+
+#header {
+    margin: 0;
+    margin-bottom: .8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+footer {
+    width: 100%;
+    margin-top: 5rem;
+    background-color: rgba(29, 29, 29, 0.788);
+    padding: 1rem;
+}
+
+
+footer > div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > div > a {
+    padding: .5rem;
+    color: white !important;
+}
+
+footer > div > a:hover,
+footer > div > a:active,
+footer > div > a:focus {
+    text-decoration: underline;
+    color: white !important;
+}
+
+#header > i {
+    padding: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#header > i::after {
+    content: 'Menú';
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: .2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#menu-lateral {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    left: -100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: white;
+    width: 30%;
+    position: fixed;
+    z-index: 3;
+    transition: all .3s ease-in-out;
+}
+
+#menu-lateral > i {
+    position: absolute;
+    z-index: 3;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    left: 25vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+
+	#menu-lateral {
+		width: 100%;	
+    }
+    #menu-lateral > i {
+        left: 90vw;
+    }
+    footer > div {
+        flex-direction: column;
+    }
+
+}
+
+#menu-lateral.abrir {
+    left: 0;
+}
+
+#menu-lateral  ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+}
+
+#menu-lateral > ul > li {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 3rem;
+}
+
+#menu-lateral > ul > li > a {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+
+
+
+
+
+/*  INDEX.html CSS   */
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper > a {
+    transition: all .2s ease-in;
+    opacity: .8;
+}
+
+#wrapper > a:hover {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.categoria-lenguajes, .categoria-standard {
+    position: relative;
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria-lenguajes {
+    background-size: cover;
+    background-image: url('../img/categorias/code.jpg');
+}
+
+.categoria-standard {
+    background-size: cover;
+    background-image: url('../img/categorias/tech.jpg');
+    background-position: center;
+}
+
+.categoria-lenguajes::before,
+.categoria-standard::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 4, 105, .6);
+}
+
+#wrapper > a > h2 {
+    background-color: white;
+    color: rgb(14, 4, 105);
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+
+
+
+/*  CATEGORIA.html CSS   */
+
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#categoria > h1 {
+    padding: 4rem;
+    font-size: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin: 3rem;
+    border: 2px black solid;
+    transition: all .3s ease-in-out;
+    min-width: $tamano-imagen-categoria;
+}
+
+.card:hover, .card:active {
+    cursor: pointer;
+    box-shadow: 0 0 7px 1px black;
+}
+
+a.card:hover,
+a.carda:active,
+a.card:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-card {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: $tamano-imagen-categoria;
+    max-width: $tamano-imagen-categoria;
+    max-height: $tamano-imagen-categoria;
+}
+
+.content-card {
+    margin-top: 1rem;
+}
+
+[name=js] {
+    background-image: url(../img/lenguajes/javascript.png);
+}
+
+[name=html] {
+    background-image: url(../img/lenguajes/html.png);
+}
+
+[name=ecmascript] {
+    background-image: url(../img/estandares/ecmascript.png);
+}
+
+[name=whatwg] {
+    background-image: url(../img/estandares/whatwg.png);
+}
+
+
+
+
+/*  DETALLE.html CSS   */
+
+
+section#detalle {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+iframe {
+    width: 70vw;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+q {
+    align-self: center;
+    font-size: 2rem;
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+figure {
+
+    align-self: center;
+    margin: 2rem;
+    margin-bottom: 2.5rem;
+
+    figcaption {
+        text-align: center;
+    }
+}
+
+li {
+    list-style-type: none;
+    padding: .5rem;
+}
+
+@media (max-width: 640px) {
+    section#detalle {
+        width: 95%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    q {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+}
