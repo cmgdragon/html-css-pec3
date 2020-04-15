@@ -6,10 +6,6 @@ $tamano-imagen-categoria: 9rem;
 
 /*  BASE CSS  */
 
-@import './_variables.scss';
-
-/*  BASE CSS  */
-
 :root {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -314,7 +310,7 @@ p {
     font-size: 1.2rem;
 }
 
-q {
+q:nth-child(2) {
     align-self: center;
     font-size: 2rem;
     color: gray;
@@ -337,6 +333,16 @@ li {
     padding: .5rem;
 }
 
+.fuente {
+    text-align: center;
+    margin-top: 4rem;
+    font-style: italic;
+}
+
+p a {
+    text-decoration: underline;
+}
+
 @media (max-width: 640px) {
     section#detalle {
         width: 95%;
@@ -344,7 +350,7 @@ li {
     h1 {
         font-size: 3rem;
     }
-    q {
+    q:nth-child(2) {
         font-size: 1.3rem;
     }
     p {
