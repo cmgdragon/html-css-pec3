@@ -40,6 +40,31 @@ a:hover, a:active, a:focus {
     margin: 0 10px 0 10px;
     margin-bottom: .8rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin-right: 4em;
+    display: flex;
+    align-items: center;
+}
+
+#logo > img {
+    max-width: 3rem;
+    min-width: 3rem;
+    
+}
+
+#logo > span {
+    font-size: 1.5rem;
+    margin-right: .2rem;
+}
+
+#logo > img + span {
+    font-size: 1.5rem;
+    margin-left: .2rem;
 }
 
 footer {
@@ -47,7 +72,6 @@ footer {
     background-color: rgba(29, 29, 29, 0.788);
     padding: 1rem;
 }
-
 
 footer > div {
     margin-top: 1rem;
@@ -68,8 +92,16 @@ footer > div > a:focus {
     color: white !important;
 }
 
+#logo-footer > #logo {
+    margin: 0;
+}
+
+#logo-footer > #logo > span {
+    color: white;
+}
+
 #header > i {
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -163,48 +195,72 @@ footer > div > a:focus {
 
 #wrapper > a {
     transition: all .2s ease-in;
-    opacity: .8;
-}
-
-#wrapper > a:hover {
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
     opacity: 1;
-}
-
-.categoria {
     position: relative;
     width: 100%;
     height: 18rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-}
-
-.categoria {
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
 
-.categoria::before {
+#wrapper > a::before {
     content: '';
     top: 0;
     left: 0;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(14, 4, 105, .6);
+    background-color: rgba(0, 0, 0, .8);
+    clip-path: polygon(21% 0, 45% 50%, 21% 100%, 0% 100%, 0 49%, 0 0);
+
+}
+
+@keyframes categoria-anim {
+    0%   {clip-path: polygon(21% 0, 45% 50%, 21% 100%, 0% 100%, 0 49%, 0 0);}
+    60%  {clip-path: polygon(24% 0, 48% 50%, 24% 100%, 0% 100%, 0 49%, 0 0); transform: translate(1em,0);}
+    100%  {clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 49%, 0 0);}
+}
+
+@keyframes categoria-name-anim {
+    60%  {transform: translate(1em,0);}
+    100%  {transform: translate(35vw,0);}
+}
+
+.animar-categoria {
+    animation: categoria-name-anim forwards;
+    animation-duration: 1s;   
+}
+
+.animar-categoria-a {
+    animation: categoria-a-anim forwards;
+    animation-duration: 1s;   
+}
+
+#wrapper > a:hover::before {
+    clip-path: polygon(21% 0, 45% 50%, 21% 100%, 0% 100%, 0 49%, 0 0);
+    animation: categoria-anim forwards;
+    animation-duration: 1s;
+}
+
+#wrapper > a:hover {
+    height: 20rem;
+    cursor: pointer;
+    opacity: 1;
 }
 
 #wrapper > a > h2 {
-    background-color: white;
-    color: rgb(14, 4, 105);
-    padding: 1rem;
+    
+    color: white;
+    font-size: 3vw;
     border-radius: 10px;
     z-index: 1;
+    margin: .5em;
+    
 }
+
 
 [name=lenguajes] {
     background-image: url('../img/categorias/code.jpg');
@@ -213,6 +269,15 @@ footer > div > a:focus {
 [name=estandares] {
     background-image: url('../img/categorias/tech.jpg');
 }
+
+@media (max-width: $tamaño-mobile) {
+
+	#wrapper > a > h2 {
+        font-size: 5.5vw;
+    }
+
+}
+
 
 
 
@@ -231,6 +296,7 @@ footer > div > a:focus {
 section#categoria > h1 {
     padding: 4rem;
     font-size: 3rem;
+    text-align: center;
 }
 
 .card {
@@ -269,20 +335,54 @@ a.card:focus {
     margin-top: 1rem;
 }
 
+.categoria {
+    position: relative;
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria {
+    background-size: cover;
+    background-position: center; 
+}
+
+.categoria::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 4, 105, .6);
+}
+
+
+#categoria > div > h1 {
+    background-color: white;
+    color: rgb(14, 4, 105);
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
 [name=js] {
-    background-image: url(../img/lenguajes/javascript.png);
+    background-image: url(../img/lenguajes/javascript.jpg);
 }
 
 [name=html] {
-    background-image: url(../img/lenguajes/html.png);
+    background-image: url(../img/lenguajes/html.jpg);
 }
 
 [name=ecmascript] {
-    background-image: url(../img/estandares/ecmascript.png);
+    background-image: url(../img/estandares/ecmascript.jpg);
 }
 
 [name=whatwg] {
-    background-image: url(../img/estandares/whatwg.png);
+    background-image: url(../img/estandares/whatwg.jpg);
 }
 
 
@@ -298,13 +398,21 @@ section#detalle {
     flex-direction: column;
 }
 
-h1 {
-    font-size: 5rem;
+.titulo-articulo {
+    font-size: 7.5vw;
     text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 
-iframe {
+iframe, picture > img, figure > img {
     width: 70vw;
+}
+
+.img-pequeña {
+    width: 50vw;
 }
 
 h2 {
@@ -316,11 +424,35 @@ p {
     font-size: 1.2rem;
 }
 
-q:nth-child(2) {
+.subtitulo-articulo {
     align-self: center;
     font-size: 2rem;
     color: gray;
     margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+[name=js-destacada] {
+    background-image: url(../img/lenguajes/javascript-grande.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 20vw;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+    opacity: .5;
+}
+
+[name=ecmascript-destacada] {
+    background-image: url(../img/estandares/ecmascript-grande.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 20vw;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+    opacity: .5; 
 }
 
 figure {
@@ -328,6 +460,7 @@ figure {
     align-self: center;
     margin: 2rem;
     margin-bottom: 2.5rem;
+    text-align: center;
 
     figcaption {
         text-align: center;
@@ -356,13 +489,16 @@ p a {
     h1 {
         font-size: 3rem;
     }
-    q:nth-child(2) {
-        font-size: 1.3rem;
-    }
     p {
         font-size: 1.1rem;
     }
     h2 {
         font-size: 1.4rem;
+    }
+    .titulo-articulo {
+        font-size: 2.5rem;
+    }
+    .img-pequeña {
+        width: 70vw;
     }
 }

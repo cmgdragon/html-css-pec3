@@ -25,3 +25,15 @@ document.querySelector('#header > i').addEventListener('click', () =>{
 document.querySelector('span#bloquear').addEventListener('click', () =>{
     abrirCerrarMenu();
 });
+
+document.querySelectorAll('#wrapper>a').forEach(e => {
+    e.addEventListener("mouseover", () => {
+        e.firstElementChild.classList.add('animar-categoria');
+    });
+});
+
+document.querySelectorAll('#wrapper>a').forEach(e => {
+    e.addEventListener("mouseout", () => {
+        e.firstElementChild.classList.remove('animar-categoria');
+    });
+});
