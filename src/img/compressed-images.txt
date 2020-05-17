@@ -1,0 +1,371 @@
+$ node compress-images.js
+ New directory was created: ../img/compress/categorias/
+ New directory was created: ../img/compress/categorias/
+ New directory was created: ../img/compress/categorias/
+ New directory was created: ../img/compress/estandares/
+ New directory was created: ../img/compress/estandares/
+ New directory was created: ../img/compress/estandares/
+ New directory was created: ../img/compress/lenguajes/
+ New directory was created: ../img/compress/lenguajes/
+ New directory was created: ../img/compress/lenguajes/
+-----------------------------------
+ File from: ../img/es6-arrow.JPG
+ File to: ../img/compress/es6-arrow.JPG
+ Compression algorithm: [mozjpeg]
+ Original size: [26.5KB] | Compressed size: [23.47KB] | Compression rate: [11.44%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/es6-arrow.JPG',
+  path_out_new: '../img/compress/es6-arrow.JPG',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 27137,
+  size_output: 24032,
+  percent: 11.44,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/estandares/ecmascript-grande.jpg
+ File to: ../img/compress/estandares/ecmascript-grande.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [38.42KB] | Compressed size: [30KB] | Compression rate: [21.93%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/estandares/ecmascript-grande.jpg',
+  path_out_new: '../img/compress/estandares/ecmascript-grande.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 39347,
+  size_output: 30717,
+  percent: 21.93,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/estandares/whatwg.jpg
+ File to: ../img/compress/estandares/whatwg.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [42.62KB] | Compressed size: [34.91KB] | Compression rate: [18.08%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/estandares/whatwg.jpg',
+  path_out_new: '../img/compress/estandares/whatwg.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 43643,
+  size_output: 35751,
+  percent: 18.08,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/meeting-js-mobile.jpg
+ File to: ../img/compress/meeting-js-mobile.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [18.97KB] | Compressed size: [8.12KB] | Compression rate: [57.21%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/meeting-js-mobile.jpg',
+  path_out_new: '../img/compress/meeting-js-mobile.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 19430,
+  size_output: 8315,
+  percent: 57.21,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/es6-arrow-mobile.JPG
+ File to: ../img/compress/es6-arrow-mobile.JPG
+ Compression algorithm: [mozjpeg]
+ Original size: [13.96KB] | Compressed size: [10.88KB] | Compression rate: [22.07%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/es6-arrow-mobile.JPG',
+  path_out_new: '../img/compress/es6-arrow-mobile.JPG',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 14297,
+  size_output: 11141,
+  percent: 22.07,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/lenguajes/javascript.jpg
+ File to: ../img/compress/lenguajes/javascript.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [30.36KB] | Compressed size: [26.32KB] | Compression rate: [13.33%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/lenguajes/javascript.jpg',
+  path_out_new: '../img/compress/lenguajes/javascript.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 31092,
+  size_output: 26947,
+  percent: 13.33,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/lenguajes/html.jpg
+ File to: ../img/compress/lenguajes/html.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [34.88KB] | Compressed size: [29.02KB] | Compression rate: [16.79%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/lenguajes/html.jpg',
+  path_out_new: '../img/compress/lenguajes/html.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 35716,
+  size_output: 29721,
+  percent: 16.79,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/js-snippet.gif
+ File to: ../img/compress/js-snippet.gif
+ Compression algorithm: [gifsicle]
+ Original size: [68.39KB] | Compressed size: [47.13KB] | Compression rate: [31.09%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/js-snippet.gif',
+  path_out_new: '../img/compress/js-snippet.gif',
+  algorithm: 'gifsicle',
+  size_in: 70031,
+  size_output: 48259,
+  percent: 31.09,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/es6-snippet-class.gif
+ File to: ../img/compress/es6-snippet-class.gif
+ Compression algorithm: [gifsicle]
+ Original size: [87.23KB] | Compressed size: [58.58KB] | Compression rate: [32.84%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/es6-snippet-class.gif',
+  path_out_new: '../img/compress/es6-snippet-class.gif',
+  algorithm: 'gifsicle',
+  size_in: 89328,
+  size_output: 59991,
+  percent: 32.84,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/js-snippet-mobile.gif
+ File to: ../img/compress/js-snippet-mobile.gif
+ Compression algorithm: [gifsicle]
+ Original size: [29.68KB] | Compressed size: [16.77KB] | Compression rate: [43.51%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/js-snippet-mobile.gif',
+  path_out_new: '../img/compress/js-snippet-mobile.gif',
+  algorithm: 'gifsicle',
+  size_in: 30395,
+  size_output: 17170,
+  percent: 43.51,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/lenguajes/javascript-grande.jpg
+ File to: ../img/compress/lenguajes/javascript-grande.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [50.37KB] | Compressed size: [36.78KB] | Compression rate: [26.98%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/lenguajes/javascript-grande.jpg',
+  path_out_new: '../img/compress/lenguajes/javascript-grande.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 51579,
+  size_output: 37665,
+  percent: 26.98,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/estandares/ecmascript.jpg
+ File to: ../img/compress/estandares/ecmascript.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [28.71KB] | Compressed size: [25.37KB] | Compression rate: [11.62%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/estandares/ecmascript.jpg',
+  path_out_new: '../img/compress/estandares/ecmascript.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 29396,
+  size_output: 25981,
+  percent: 11.62,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/es6-snippet-class-mobile.gif
+ File to: ../img/compress/es6-snippet-class-mobile.gif
+ Compression algorithm: [gifsicle]
+ Original size: [41.31KB] | Compressed size: [25.19KB] | Compression rate: [39.01%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/es6-snippet-class-mobile.gif',
+  path_out_new: '../img/compress/es6-snippet-class-mobile.gif',
+  algorithm: 'gifsicle',
+  size_in: 42298,
+  size_output: 25798,
+  percent: 39.01,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/categorias/code.jpg
+ File to: ../img/compress/categorias/code.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [194.42KB] | Compressed size: [76.52KB] | Compression rate: [60.64%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/categorias/code.jpg',
+  path_out_new: '../img/compress/categorias/code.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 199090,
+  size_output: 78352,
+  percent: 60.64,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/categorias/tech.jpg
+ File to: ../img/compress/categorias/tech.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [918.24KB] | Compressed size: [219.67KB] | Compression rate: [76.08%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/categorias/tech.jpg',
+  path_out_new: '../img/compress/categorias/tech.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 940273,
+  size_output: 224939,
+  percent: 76.08,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/meeting-js-desktop.jpg
+ File to: ../img/compress/meeting-js-desktop.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [660.95KB] | Compressed size: [158.27KB] | Compression rate: [76.05%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/meeting-js-desktop.jpg',
+  path_out_new: '../img/compress/meeting-js-desktop.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 676811,
+  size_output: 162068,
+  percent: 76.05,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/es6-arrow-mobiles.jpg
+ File to: ../img/compress/es6-arrow-mobiles.jpg
+ Compression algorithm: [mozjpeg]
+ Original size: [667.69KB] | Compressed size: [199.84KB] | Compression rate: [70.07%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/es6-arrow-mobiles.jpg',
+  path_out_new: '../img/compress/es6-arrow-mobiles.jpg',
+  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
+  size_in: 683718,
+  size_output: 204641,
+  percent: 70.07,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/logo-footer.svg
+ File to: ../img/compress/logo-footer.svg
+ Compression algorithm: [svgo]
+ Original size: [13.44KB] | Compressed size: [864B] | Compression rate: [93.72%]
+-----------------------------------
+-------------
+null
+false
+{
+  input: '../img/logo-footer.svg',
+  path_out_new: '../img/compress/logo-footer.svg',
+  algorithm: 'svgo',
+  size_in: 13758,
+  size_output: 864,
+  percent: 93.72,
+  err: null
+}
+-------------
+-----------------------------------
+ File from: ../img/logo.svg
+ File to: ../img/compress/logo.svg
+ Compression algorithm: [svgo]
+ Original size: [13.43KB] | Compressed size: [864B] | Compression rate: [93.72%]
+-----------------------------------
+-------------
+null
+true
+{
+  input: '../img/logo.svg',
+  path_out_new: '../img/compress/logo.svg',
+  algorithm: 'svgo',
+  size_in: 13754,
+  size_output: 864,
+  percent: 93.72,
+  err: null
+}
+-------------

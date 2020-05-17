@@ -22,8 +22,11 @@
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
+    "compress-images": "^1.7.8",
+    "gifsicle": "^5.0.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-clean-dist": "0.0.6",
+    "pngquant-bin": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "sass": "^1.26.3"
   },
