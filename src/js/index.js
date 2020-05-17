@@ -14,11 +14,11 @@ let abrirCerrarMenu = () => {
 
 }
 
-document.querySelector('#menu-lateral > i').addEventListener('click', () =>{
+document.querySelector('#menu-lateral > span').addEventListener('click', () =>{
     abrirCerrarMenu();
 });
 
-document.querySelector('#header > i').addEventListener('click', () =>{
+document.querySelector('#header > span').addEventListener('click', () =>{
     abrirCerrarMenu();
 });
 

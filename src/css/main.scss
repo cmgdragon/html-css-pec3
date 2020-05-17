@@ -45,24 +45,24 @@ a:hover, a:active, a:focus {
     align-items: center;
 }
 
-#logo {
+.logo {
     margin-right: 4em;
     display: flex;
     align-items: center;
 }
 
-#logo > img {
+.logo > img {
     max-width: 3rem;
     min-width: 3rem;
     
 }
 
-#logo > span {
+.logo > span {
     font-size: 1.5rem;
     margin-right: .2rem;
 }
 
-#logo > img + span {
+.logo > img + span {
     font-size: 1.5rem;
     margin-left: .2rem;
 }
@@ -92,21 +92,21 @@ footer > div > a:focus {
     color: white !important;
 }
 
-#logo-footer > #logo {
+#logo-footer > .logo {
     margin: 0;
 }
 
-#logo-footer > #logo > span {
+#logo-footer > .logo > span {
     color: white;
 }
 
-#header > i {
+#header > span {
     padding: 1.5rem;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-#header > i::after {
+#header > span::after {
     content: 'Menú';
     font-family: Arial, Helvetica, sans-serif;
     margin-left: .2rem;
@@ -131,7 +131,7 @@ footer > div > a:focus {
     transition: all .3s ease-in-out;
 }
 
-#menu-lateral > i {
+#menu-lateral > span {
     position: absolute;
     z-index: 3;
     padding-top: 1rem;
