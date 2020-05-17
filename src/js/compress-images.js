@@ -1,6 +1,6 @@
 var compress_images = require('compress-images'), INPUT_path_to_your_images, OUTPUT_path;
  
-INPUT_path_to_your_images = '../img/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}';
+INPUT_path_to_your_images = '../img/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,gif}';
 OUTPUT_path = '../img/compress/';
 
 compress_images(INPUT_path_to_your_images, OUTPUT_path, {compress_force: false, statistic: true, autoupdate: true}, false,

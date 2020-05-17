@@ -9,21 +9,22 @@ $ node compress-images.js
  New directory was created: ../img/compress/lenguajes/
  New directory was created: ../img/compress/lenguajes/
 -----------------------------------
- File from: ../img/es6-arrow.JPG
- File to: ../img/compress/es6-arrow.JPG
- Compression algorithm: [mozjpeg]
- Original size: [26.5KB] | Compressed size: [23.47KB] | Compression rate: [11.44%]
+-----------------------------------
+ File from: ../img/es6-arrow.PNG
+ File to: ../img/compress/es6-arrow.PNG
+ Compression algorithm: [pngquant]
+ Original size: [5KB] | Compressed size: [2.84KB] | Compression rate: [43.2%]
 -----------------------------------
 -------------
 null
-false
+true
 {
-  input: '../img/es6-arrow.JPG',
-  path_out_new: '../img/compress/es6-arrow.JPG',
-  algorithm: { engine: 'mozjpeg', command: [ '-quality', '60' ] },
-  size_in: 27137,
-  size_output: 24032,
-  percent: 11.44,
+  input: '../img/es6-arrow.PNG',
+  path_out_new: '../img/compress/es6-arrow.PNG',
+  algorithm: 'pngquant',
+  size_in: 5120,
+  size_output: 2908,
+  percent: 43.2,
   err: null
 }
 -------------
